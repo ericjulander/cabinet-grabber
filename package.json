@@ -1,0 +1,18 @@
+{
+    "name": "mobile-dev-server",
+    "version": "1.0.0",
+    "description": "This is a test server to live-develop on mobile devices",
+    "main": "main.js",
+    "dependencies": {
+        "browser-sync": "^2.26.7",
+        "express": "^4.17.1",
+        "gulp": "^4.0.2",
+        "uglify-js": "^3.6.3"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "gulp launch-mobile-dev"
+    },
+    "author": "Eric Julander",
+    "license": "MIT"
+}

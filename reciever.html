@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>View Test</title>
+</head>
+
+<body>
+    <style>
+        * {
+            font-size: 50px;
+        }
+    </style>
+    <h1>Test 1!</h1>
+    <div id="target">
+        Content Goes Here
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+        var socket = io();
+        socket.on("html-response",(html)=>{
+            $("#target").html(html);
+        });
+    
+    </script>
+
+</body>
+
+</html>
