@@ -81,7 +81,7 @@
                 masterData.push(dat);
                 container.appendChild(makeRow(dat));
                 console.log(index, items.length);
-                if (index + 1 == 3) {
+                if (index + 1 == items.length) {
                     console.log(index + 1, items.length);
                     makeCsv(masterData);
                     r(style + container.outerHTML);
